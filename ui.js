@@ -941,6 +941,8 @@
     const storageSpan = document.querySelector(".storage-heading span");
     if (storageStrong) storageStrong.textContent = config.label;
     if (storageSpan) storageSpan.textContent = "雲端儲存空間";
+    const providerLabel = document.getElementById("overviewProviderLabel");
+    if (providerLabel) providerLabel.textContent = config.shortLabel;
   }
 
   function renderFiles() {
