@@ -444,3 +444,97 @@ h1 { margin: 14px 0 7px; font-size: clamp(29px, 3.2vw, 39px); font-weight: 610; 
 .provider-btn.active svg {
   color: #a9c5ff;
 }
+
+/* ── Readability: larger type scale (desktop + mobile) ── */
+:root {
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 18px;
+  --fs-title: clamp(32px, 3.6vw, 42px);
+}
+
+.brand-copy strong { font-size: 16px !important; }
+.brand-copy small { font-size: 11px !important; letter-spacing: .12em !important; }
+.sidebar-label { font-size: 12px !important; letter-spacing: .1em !important; }
+.side-link { height: 46px !important; }
+.side-link span:nth-child(2) { font-size: 14px !important; }
+.nav-count { font-size: 12px !important; }
+.storage-heading strong { font-size: 13px !important; }
+.storage-heading span,
+.storage-card p { font-size: 12px !important; }
+.connection-indicator { font-size: 12px !important; }
+.account-copy strong { font-size: 13px !important; }
+.account-copy small { font-size: 12px !important; }
+
+.breadcrumbs { font-size: 13px !important; }
+.online-badge { font-size: 12px !important; }
+.button { min-height: 40px !important; font-size: 13px !important; padding: 0 18px !important; }
+.top-upload { font-size: 13px !important; }
+
+.eyebrow { font-size: 12px !important; }
+h1 { font-size: var(--fs-title) !important; }
+.page-description { font-size: 14px !important; line-height: 1.6 !important; }
+
+.overview-trend { font-size: 12px !important; }
+.overview-value { font-size: 24px !important; }
+.sync-value { font-size: 20px !important; }
+.overview-caption { font-size: 12px !important; }
+
+.section-heading h2 { font-size: 18px !important; }
+.section-heading p { font-size: 13px !important; }
+.search-box { height: 40px !important; }
+.search-box input { font-size: 14px !important; }
+.search-box kbd { font-size: 11px !important; }
+.pill-tab { min-height: 34px !important; font-size: 13px !important; padding: 0 14px !important; }
+.pill-tab span { font-size: 12px !important; }
+.sort-button { font-size: 13px !important; }
+
+.file-card { min-height: 76px !important; }
+.file-name { font-size: 14px !important; }
+.file-meta { font-size: 12px !important; }
+
+.empty-state h3 { font-size: 18px !important; }
+.empty-state p { font-size: 14px !important; line-height: 1.65 !important; }
+.loading-state { font-size: 14px !important; }
+.page-footer { font-size: 12px !important; }
+
+.modal-kicker { font-size: 12px !important; }
+.modal h2 { font-size: 22px !important; }
+.modal-description { font-size: 14px !important; }
+.dropzone strong { font-size: 14px !important; }
+.dropzone > span:last-child { font-size: 12px !important; }
+.share-help { font-size: 12px !important; }
+.selected-file { font-size: 13px !important; }
+.progress-label { font-size: 13px !important; }
+.progress-detail { font-size: 12px !important; }
+.modal-footnote { font-size: 12px !important; }
+.toast { font-size: 13px !important; }
+
+.provider-switch {
+  margin: 14px 0 10px !important;
+  padding: 5px !important;
+  border-radius: 14px !important;
+}
+.provider-btn {
+  min-height: 42px !important;
+  font-size: 13px !important;
+  font-weight: 650 !important;
+  gap: 8px !important;
+}
+.provider-btn svg { width: 16px !important; height: 16px !important; }
+
+.account-chip .chip-copy strong { font-size: 13px !important; }
+.account-chip .chip-copy small { font-size: 12px !important; }
+
+@media (max-width: 760px) {
+  .side-link span:nth-child(2) { font-size: 15px !important; }
+  .page-description { font-size: 15px !important; }
+  .file-name { font-size: 15px !important; }
+  .file-meta { font-size: 13px !important; }
+  .pill-tab { font-size: 14px !important; min-height: 38px !important; }
+  .search-box input { font-size: 16px !important; } /* iOS 避免自動放大 */
+  .mobile-nav-item { font-size: 12px !important; }
+  .button, .top-upload { font-size: 14px !important; }
+}
